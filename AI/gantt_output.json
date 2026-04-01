@@ -1,0 +1,103 @@
+{
+  "project_title": "Semantic Plagiarism Detection System",
+  "total_duration_days": 120,
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Requirements Gathering",
+      "role": "Project Manager",
+      "start_day": 1,
+      "duration_days": 5,
+      "dependencies": [],
+      "is_milestone": false,
+      "description": "Collect and document requirements from stakeholders"
+    },
+    {
+      "id": 2,
+      "name": "Frontend Development",
+      "role": "Frontend Developer",
+      "start_day": 6,
+      "duration_days": 40,
+      "dependencies": [
+        1
+      ],
+      "is_milestone": false,
+      "description": "Design and implement the user interface"
+    },
+    {
+      "id": 3,
+      "name": "Backend Development",
+      "role": "Backend Developer",
+      "start_day": 6,
+      "duration_days": 40,
+      "dependencies": [
+        1
+      ],
+      "is_milestone": false,
+      "description": "Design and implement the server-side logic"
+    },
+    {
+      "id": 4,
+      "name": "Natural Language Processing",
+      "role": "NLP Engineer",
+      "start_day": 11,
+      "duration_days": 20,
+      "dependencies": [
+        1
+      ],
+      "is_milestone": false,
+      "description": "Implement semantic plagiarism detection algorithms"
+    },
+    {
+      "id": 5,
+      "name": "Database Design",
+      "role": "Database Administrator",
+      "start_day": 16,
+      "duration_days": 10,
+      "dependencies": [
+        1
+      ],
+      "is_milestone": false,
+      "description": "Design and implement the database schema"
+    },
+    {
+      "id": 6,
+      "name": "Integration Testing",
+      "role": "Quality Assurance Engineer",
+      "start_day": 51,
+      "duration_days": 15,
+      "dependencies": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "is_milestone": false,
+      "description": "Test the integrated system"
+    },
+    {
+      "id": 7,
+      "name": "Deployment",
+      "role": "DevOps Engineer",
+      "start_day": 66,
+      "duration_days": 10,
+      "dependencies": [
+        6
+      ],
+      "is_milestone": false,
+      "description": "Deploy the system to production"
+    },
+    {
+      "id": 8,
+      "name": "Project Completion",
+      "role": "Project Manager",
+      "start_day": 76,
+      "duration_days": 1,
+      "dependencies": [
+        7
+      ],
+      "is_milestone": true,
+      "description": "Official project completion"
+    }
+  ]
+}

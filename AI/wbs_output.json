@@ -1,0 +1,161 @@
+{
+  "project_title": "Student Attendance Tracking Mobile App",
+  "phases": [
+    {
+      "phase_id": 1,
+      "phase_name": "Planning",
+      "tasks": [
+        {
+          "task_id": "1.1",
+          "task_name": "Define Project Scope",
+          "description": "Define the project scope, goals, and deliverables",
+          "effort_days": 3,
+          "role": "Project Manager"
+        },
+        {
+          "task_id": "1.2",
+          "task_name": "Identify Stakeholders",
+          "description": "Identify the stakeholders, including teachers, admins, and students",
+          "effort_days": 2,
+          "role": "Project Manager"
+        }
+      ]
+    },
+    {
+      "phase_id": 2,
+      "phase_name": "Design",
+      "tasks": [
+        {
+          "task_id": "2.1",
+          "task_name": "Create Wireframes",
+          "description": "Create wireframes for the login, dashboard, and reporting features",
+          "effort_days": 5,
+          "role": "UI/UX Designer"
+        },
+        {
+          "task_id": "2.2",
+          "task_name": "Design Visual Elements",
+          "description": "Design the visual elements, including icons, colors, and typography",
+          "effort_days": 4,
+          "role": "UI/UX Designer"
+        },
+        {
+          "task_id": "2.3",
+          "task_name": "Create Prototype",
+          "description": "Create a functional prototype of the app",
+          "effort_days": 6,
+          "role": "UI/UX Designer"
+        }
+      ]
+    },
+    {
+      "phase_id": 3,
+      "phase_name": "Development",
+      "tasks": [
+        {
+          "task_id": "3.1",
+          "task_name": "Set Up Development Environment",
+          "description": "Set up the development environment, including tools and frameworks",
+          "effort_days": 2,
+          "role": "Mobile App Developer"
+        },
+        {
+          "task_id": "3.2",
+          "task_name": "Implement Login Feature",
+          "description": "Implement the login feature, including authentication and authorization",
+          "effort_days": 6,
+          "role": "Mobile App Developer"
+        },
+        {
+          "task_id": "3.3",
+          "task_name": "Implement Dashboard Feature",
+          "description": "Implement the dashboard feature, including data visualization and reporting",
+          "effort_days": 8,
+          "role": "Mobile App Developer"
+        },
+        {
+          "task_id": "3.4",
+          "task_name": "Implement Reporting Feature",
+          "description": "Implement the reporting feature, including data export as PDF",
+          "effort_days": 6,
+          "role": "Mobile App Developer"
+        },
+        {
+          "task_id": "3.5",
+          "task_name": "Implement Notification Feature",
+          "description": "Implement the notification feature, including push notifications",
+          "effort_days": 4,
+          "role": "Mobile App Developer"
+        },
+        {
+          "task_id": "3.6",
+          "task_name": "Implement Role-Based Access Control",
+          "description": "Implement role-based access control, including teacher and admin roles",
+          "effort_days": 5,
+          "role": "Mobile App Developer"
+        }
+      ]
+    },
+    {
+      "phase_id": 4,
+      "phase_name": "Testing",
+      "tasks": [
+        {
+          "task_id": "4.1",
+          "task_name": "Create Test Plan",
+          "description": "Create a test plan, including test cases and scenarios",
+          "effort_days": 3,
+          "role": "QA Engineer"
+        },
+        {
+          "task_id": "4.2",
+          "task_name": "Conduct Unit Testing",
+          "description": "Conduct unit testing, including testing individual components",
+          "effort_days": 6,
+          "role": "QA Engineer"
+        },
+        {
+          "task_id": "4.3",
+          "task_name": "Conduct Integration Testing",
+          "description": "Conduct integration testing, including testing interactions between components",
+          "effort_days": 8,
+          "role": "QA Engineer"
+        },
+        {
+          "task_id": "4.4",
+          "task_name": "Conduct System Testing",
+          "description": "Conduct system testing, including testing the entire system",
+          "effort_days": 10,
+          "role": "QA Engineer"
+        }
+      ]
+    },
+    {
+      "phase_id": 5,
+      "phase_name": "Deployment",
+      "tasks": [
+        {
+          "task_id": "5.1",
+          "task_name": "Prepare Deployment Environment",
+          "description": "Prepare the deployment environment, including servers and infrastructure",
+          "effort_days": 4,
+          "role": "DevOps Engineer"
+        },
+        {
+          "task_id": "5.2",
+          "task_name": "Deploy App to Production",
+          "description": "Deploy the app to production, including configuring and testing",
+          "effort_days": 6,
+          "role": "DevOps Engineer"
+        },
+        {
+          "task_id": "5.3",
+          "task_name": "Configure Monitoring and Analytics",
+          "description": "Configure monitoring and analytics tools, including tracking user behavior",
+          "effort_days": 4,
+          "role": "DevOps Engineer"
+        }
+      ]
+    }
+  ]
+}
