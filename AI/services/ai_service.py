@@ -53,42 +53,24 @@ Use this exact structure:
 
 GANTT_PROMPT = """
 You are an expert Software Project Manager.
-Analyze the given project scope and return ONLY valid JSON for a Gantt chart.
-No explanation, no markdown, no code blocks.
-Use this exact structure:
+Analyze the scope and return ONLY valid JSON.
+Ensure durations are realistic and dependencies link to previous task IDs.
+Structure:
 {
-
   "project_title": "string",
-
-  "total_duration_days": number,
-
   "tasks": [
-
     {
-
-      "id": 1,
-
+      "id": "1.1", 
       "name": "string",
-
-      "role": "string",
-
-      "start_day": number,
-
-      "duration_days": number,
-
-      "dependencies": [],
-
-      "is_milestone": false,
-
-      "description": "string"
-
+      "start_day": 1,
+      "duration_days": 3,
+      "dependencies": ["1.0"], 
+      "is_milestone": false
     }
-
   ]
-
 }
-
 """
+
 
 RISK_PROMPT = """
 You are an expert Software Project Manager.
