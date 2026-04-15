@@ -1,0 +1,112 @@
+{
+  "project_title": "Student Attendance Mobile App",
+  "total_duration_days": 120,
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Requirements Gathering",
+      "role": "Project Manager",
+      "start_day": 1,
+      "duration_days": 5,
+      "dependencies": [],
+      "is_milestone": false,
+      "description": "Define project scope, goals, and timelines"
+    },
+    {
+      "id": 2,
+      "name": "Design UI/UX",
+      "role": "UI/UX Designer",
+      "start_day": 6,
+      "duration_days": 10,
+      "dependencies": [
+        1
+      ],
+      "is_milestone": false,
+      "description": "Create user interface and user experience designs"
+    },
+    {
+      "id": 3,
+      "name": "Develop Login Feature",
+      "role": "Mobile App Developer",
+      "start_day": 16,
+      "duration_days": 8,
+      "dependencies": [
+        2
+      ],
+      "is_milestone": false,
+      "description": "Implement login functionality for teachers and admins"
+    },
+    {
+      "id": 4,
+      "name": "Develop Dashboard Feature",
+      "role": "Mobile App Developer",
+      "start_day": 24,
+      "duration_days": 12,
+      "dependencies": [
+        3
+      ],
+      "is_milestone": false,
+      "description": "Create dashboard for teachers and admins to view attendance data"
+    },
+    {
+      "id": 5,
+      "name": "Develop Reporting Feature",
+      "role": "Mobile App Developer",
+      "start_day": 36,
+      "duration_days": 15,
+      "dependencies": [
+        4
+      ],
+      "is_milestone": false,
+      "description": "Implement reporting feature with PDF export functionality"
+    },
+    {
+      "id": 6,
+      "name": "Implement Notification System",
+      "role": "Mobile App Developer",
+      "start_day": 51,
+      "duration_days": 8,
+      "dependencies": [
+        5
+      ],
+      "is_milestone": false,
+      "description": "Send notifications to teachers and admins for attendance updates"
+    },
+    {
+      "id": 7,
+      "name": "Testing and Quality Assurance",
+      "role": "QA Engineer",
+      "start_day": 59,
+      "duration_days": 20,
+      "dependencies": [
+        6
+      ],
+      "is_milestone": false,
+      "description": "Test the app for bugs and ensure quality"
+    },
+    {
+      "id": 8,
+      "name": "Deployment and Maintenance",
+      "role": "DevOps Engineer",
+      "start_day": 79,
+      "duration_days": 30,
+      "dependencies": [
+        7
+      ],
+      "is_milestone": false,
+      "description": "Deploy the app and ensure maintenance and updates"
+    },
+    {
+      "id": 9,
+      "name": "Project Completion",
+      "role": "Project Manager",
+      "start_day": 109,
+      "duration_days": 1,
+      "dependencies": [
+        8
+      ],
+      "is_milestone": true,
+      "description": "Complete the project and hand over to clients"
+    }
+  ]
+}

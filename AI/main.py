@@ -1,0 +1,76 @@
+import json
+import re
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import JSONResponse
+from pydantic import BaseModel
+from services.ai_service import call_model, WBS_PROMPT, GANTT_PROMPT, RISK_PROMPT, QA_PROMPT
+
+app = FastAPI()
+
+class ScopeInput(BaseModel):
+    scope_text: str
+
+class QAInput(BaseModel):
+    question: str
+
+def clean_text(text: str) -> str:
+    text = text.replace('\n', ' ').replace('\r', ' ')
+    text = re.sub(r'\s+', ' ', text)
+    return text.strip()
+
+# Custom request handler that fixes broken JSON before Pydantic sees it
+@app.middleware("http")
+async def fix_json_body(request: Request, call_next):
+    if request.method == "POST":
+        try:
+            body = await request.body()
+            body_str = body.decode("utf-8")
+            body_str = re.sub(r'(?<!\\)\n', ' ', body_str)
+            body_str = re.sub(r'(?<!\\)\r', ' ', body_str)
+            async def new_body():
+                yield body_str.encode("utf-8")
+            request._body = body_str.encode("utf-8")
+        except:
+            pass
+    return await call_next(request)
+
+@app.post("/wbs")
+async def generate_wbs(input: ScopeInput):
+    try:
+        result = call_model(WBS_PROMPT, clean_text(input.scope_text))
+        data = json.loads(result)
+        with open("wbs_output.json", "w") as f:
+            json.dump(data, f, indent=2)
+        return data
+    except Exception as e:
+        raise HTTPException(status_code=503, detail=str(e))
+
+@app.post("/gantt")
+async def generate_gantt(input: ScopeInput):
+    try:
+        result = call_model(GANTT_PROMPT, clean_text(input.scope_text))
+        data = json.loads(result)
+        with open("gantt_output.json", "w") as f:
+            json.dump(data, f, indent=2)
+        return data
+    except Exception as e:
+        raise HTTPException(status_code=503, detail=str(e))
+
+@app.post("/risk")
+async def generate_risk(input: ScopeInput):
+    try:
+        result = call_model(RISK_PROMPT, clean_text(input.scope_text))
+        data = json.loads(result)
+        with open("risk_output.json", "w") as f:
+            json.dump(data, f, indent=2)
+        return data
+    except Exception as e:
+        raise HTTPException(status_code=503, detail=str(e))
+
+@app.post("/qa")
+async def answer_question(input: QAInput):
+    try:
+        result = call_model(QA_PROMPT, clean_text(input.question))
+        return {"answer": result}
+    except Exception as e:
+        raise HTTPException(status_code=503, detail=str(e))

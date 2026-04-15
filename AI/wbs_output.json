@@ -1,0 +1,126 @@
+{
+  "project_title": "Student Attendance Tracker",
+  "phases": [
+    {
+      "phase_id": 1,
+      "phase_name": "Requirements Gathering",
+      "tasks": [
+        {
+          "task_id": "1.1",
+          "task_name": "Define Project Scope",
+          "description": "Gather requirements from stakeholders and define project scope",
+          "effort_days": 5,
+          "role": "Project Manager"
+        },
+        {
+          "task_id": "1.2",
+          "task_name": "Identify User Roles",
+          "description": "Define teacher, admin, and student roles and their respective permissions",
+          "effort_days": 3,
+          "role": "Business Analyst"
+        }
+      ]
+    },
+    {
+      "phase_id": 2,
+      "phase_name": "Design",
+      "tasks": [
+        {
+          "task_id": "2.1",
+          "task_name": "Create Wireframes",
+          "description": "Design the user interface for login, dashboard, and reporting features",
+          "effort_days": 8,
+          "role": "UI/UX Designer"
+        },
+        {
+          "task_id": "2.2",
+          "task_name": "Develop Prototype",
+          "description": "Create a clickable prototype to test the app's functionality",
+          "effort_days": 10,
+          "role": "UI/UX Designer"
+        }
+      ]
+    },
+    {
+      "phase_id": 3,
+      "phase_name": "Development",
+      "tasks": [
+        {
+          "task_id": "3.1",
+          "task_name": "Develop Login Feature",
+          "description": "Implement login functionality for teachers, admins, and students",
+          "effort_days": 12,
+          "role": "Mobile App Developer"
+        },
+        {
+          "task_id": "3.2",
+          "task_name": "Develop Dashboard Feature",
+          "description": "Implement dashboard functionality to display attendance records",
+          "effort_days": 15,
+          "role": "Mobile App Developer"
+        },
+        {
+          "task_id": "3.3",
+          "task_name": "Develop Reporting Feature",
+          "description": "Implement reporting functionality to export attendance records as PDF",
+          "effort_days": 10,
+          "role": "Mobile App Developer"
+        },
+        {
+          "task_id": "3.4",
+          "task_name": "Implement Notification System",
+          "description": "Implement a notification system to send alerts to teachers, admins, and students",
+          "effort_days": 8,
+          "role": "Mobile App Developer"
+        }
+      ]
+    },
+    {
+      "phase_id": 4,
+      "phase_name": "Testing",
+      "tasks": [
+        {
+          "task_id": "4.1",
+          "task_name": "Unit Testing",
+          "description": "Perform unit testing for individual components",
+          "effort_days": 10,
+          "role": "QA Engineer"
+        },
+        {
+          "task_id": "4.2",
+          "task_name": "Integration Testing",
+          "description": "Perform integration testing to ensure seamless functionality",
+          "effort_days": 12,
+          "role": "QA Engineer"
+        },
+        {
+          "task_id": "4.3",
+          "task_name": "UAT Testing",
+          "description": "Perform user acceptance testing to ensure the app meets requirements",
+          "effort_days": 10,
+          "role": "QA Engineer"
+        }
+      ]
+    },
+    {
+      "phase_id": 5,
+      "phase_name": "Deployment",
+      "tasks": [
+        {
+          "task_id": "5.1",
+          "task_name": "Prepare for Release",
+          "description": "Prepare the app for release on app stores",
+          "effort_days": 5,
+          "role": "DevOps Engineer"
+        },
+        {
+          "task_id": "5.2",
+          "task_name": "Deploy to Production",
+          "description": "Deploy the app to production environment",
+          "effort_days": 3,
+          "role": "DevOps Engineer"
+        }
+      ]
+    }
+  ]
+}
