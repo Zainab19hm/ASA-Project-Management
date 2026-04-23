@@ -1,0 +1,77 @@
+### Health Check
+GET http://127.0.0.1:8000/health/
+
+###
+
+### Analyze All (WBS + Gantt + Risk)
+POST http://127.0.0.1:8000/api/analyze/
+Content-Type: application/json
+
+{
+    "scope_text": "Build a mobile app for food delivery with GPS tracking and payment integration"
+}
+
+###
+
+### Export WBS as PDF
+POST http://127.0.0.1:8000/api/analyze/export/wbs-pdf/
+Content-Type: application/json
+
+{
+    "project_title": "Food Delivery App",
+    "phases": [
+        {
+            "phase_id": "1",
+            "phase_name": "Planning",
+            "tasks": [
+                { "task_id": "1.1", "task_name": "Requirements gathering", "role": "BA", "effort_days": 5 }
+            ]
+        }
+    ]
+}
+
+###
+
+### Export Gantt as PDF
+POST http://127.0.0.1:8000/api/analyze/export/gantt-pdf/
+Content-Type: application/json
+
+{
+    "project_title": "Food Delivery App",
+    "total_duration_days": 30,
+    "tasks": [
+        { "id": "1", "name": "Requirements", "role": "BA", "start_day": 1, "duration_days": 5, "dependencies": [] }
+    ]
+}
+
+###
+
+### Export Risk as PDF
+POST http://127.0.0.1:8000/api/analyze/export/risk-pdf/
+Content-Type: application/json
+
+{
+    "project_title": "Food Delivery App",
+    "risks": [
+        { "risk_id": "1", "title": "Delay in delivery", "category": "Operational", "probability": "High", "impact": "High", "mitigation": "Add buffer time" }
+    ]
+}
+
+###
+
+### Export WBS as PNG
+POST http://127.0.0.1:8000/api/analyze/export/wbs-png/
+Content-Type: application/json
+
+{
+    "project_title": "Food Delivery App",
+    "phases": [
+        {
+            "phase_id": "1",
+            "phase_name": "Planning",
+            "tasks": [
+                { "task_id": "1.1", "task_name": "Requirements gathering", "role": "BA", "effort_days": 5 }
+            ]
+        }
+    ]
+}
