@@ -1,5 +1,5 @@
 {
-  "project_title": "Student Attendance Tracker",
+  "project_title": "AI Scope Analyzer System Development",
   "phases": [
     {
       "phase_id": 1,
@@ -7,15 +7,15 @@
       "tasks": [
         {
           "task_id": "1.1",
-          "task_name": "Define Project Scope",
-          "description": "Gather requirements from stakeholders and define project scope",
+          "task_name": "Project Scope Definition",
+          "description": "Define the project scope, goals, and deliverables",
           "effort_days": 5,
           "role": "Project Manager"
         },
         {
           "task_id": "1.2",
-          "task_name": "Identify User Roles",
-          "description": "Define teacher, admin, and student roles and their respective permissions",
+          "task_name": "Stakeholder Identification",
+          "description": "Identify the stakeholders and their roles in the project",
           "effort_days": 3,
           "role": "Business Analyst"
         }
@@ -23,21 +23,21 @@
     },
     {
       "phase_id": 2,
-      "phase_name": "Design",
+      "phase_name": "System Design",
       "tasks": [
         {
           "task_id": "2.1",
-          "task_name": "Create Wireframes",
-          "description": "Design the user interface for login, dashboard, and reporting features",
-          "effort_days": 8,
-          "role": "UI/UX Designer"
+          "task_name": "Large Language Model Selection",
+          "description": "Select the Large Language Model for the system",
+          "effort_days": 4,
+          "role": "AI Engineer"
         },
         {
           "task_id": "2.2",
-          "task_name": "Develop Prototype",
-          "description": "Create a clickable prototype to test the app's functionality",
-          "effort_days": 10,
-          "role": "UI/UX Designer"
+          "task_name": "System Architecture Design",
+          "description": "Design the system architecture and components",
+          "effort_days": 8,
+          "role": "Solution Architect"
         }
       ]
     },
@@ -47,77 +47,36 @@
       "tasks": [
         {
           "task_id": "3.1",
-          "task_name": "Develop Login Feature",
-          "description": "Implement login functionality for teachers, admins, and students",
+          "task_name": "Core Planning Outputs Generation",
+          "description": "Develop the core planning outputs generation module",
           "effort_days": 12,
-          "role": "Mobile App Developer"
+          "role": "Software Developer"
         },
         {
           "task_id": "3.2",
-          "task_name": "Develop Dashboard Feature",
-          "description": "Implement dashboard functionality to display attendance records",
-          "effort_days": 15,
-          "role": "Mobile App Developer"
-        },
-        {
-          "task_id": "3.3",
-          "task_name": "Develop Reporting Feature",
-          "description": "Implement reporting functionality to export attendance records as PDF",
+          "task_name": "Integration with Large Language Model",
+          "description": "Integrate the system with the selected Large Language Model",
           "effort_days": 10,
-          "role": "Mobile App Developer"
-        },
-        {
-          "task_id": "3.4",
-          "task_name": "Implement Notification System",
-          "description": "Implement a notification system to send alerts to teachers, admins, and students",
-          "effort_days": 8,
-          "role": "Mobile App Developer"
+          "role": "AI Engineer"
         }
       ]
     },
     {
       "phase_id": 4,
-      "phase_name": "Testing",
+      "phase_name": "Testing and Deployment",
       "tasks": [
         {
           "task_id": "4.1",
-          "task_name": "Unit Testing",
-          "description": "Perform unit testing for individual components",
-          "effort_days": 10,
+          "task_name": "System Testing",
+          "description": "Test the system for functionality and performance",
+          "effort_days": 8,
           "role": "QA Engineer"
         },
         {
           "task_id": "4.2",
-          "task_name": "Integration Testing",
-          "description": "Perform integration testing to ensure seamless functionality",
-          "effort_days": 12,
-          "role": "QA Engineer"
-        },
-        {
-          "task_id": "4.3",
-          "task_name": "UAT Testing",
-          "description": "Perform user acceptance testing to ensure the app meets requirements",
-          "effort_days": 10,
-          "role": "QA Engineer"
-        }
-      ]
-    },
-    {
-      "phase_id": 5,
-      "phase_name": "Deployment",
-      "tasks": [
-        {
-          "task_id": "5.1",
-          "task_name": "Prepare for Release",
-          "description": "Prepare the app for release on app stores",
-          "effort_days": 5,
-          "role": "DevOps Engineer"
-        },
-        {
-          "task_id": "5.2",
-          "task_name": "Deploy to Production",
-          "description": "Deploy the app to production environment",
-          "effort_days": 3,
+          "task_name": "Deployment and Maintenance",
+          "description": "Deploy the system and plan for maintenance and updates",
+          "effort_days": 6,
           "role": "DevOps Engineer"
         }
       ]

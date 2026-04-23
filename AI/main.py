@@ -1,11 +1,19 @@
 import json
 import re
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import JSONResponse
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from services.ai_service import call_model, WBS_PROMPT, GANTT_PROMPT, RISK_PROMPT, QA_PROMPT
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class ScopeInput(BaseModel):
     scope_text: str
@@ -17,22 +25,6 @@ def clean_text(text: str) -> str:
     text = text.replace('\n', ' ').replace('\r', ' ')
     text = re.sub(r'\s+', ' ', text)
     return text.strip()
-
-# Custom request handler that fixes broken JSON before Pydantic sees it
-@app.middleware("http")
-async def fix_json_body(request: Request, call_next):
-    if request.method == "POST":
-        try:
-            body = await request.body()
-            body_str = body.decode("utf-8")
-            body_str = re.sub(r'(?<!\\)\n', ' ', body_str)
-            body_str = re.sub(r'(?<!\\)\r', ' ', body_str)
-            async def new_body():
-                yield body_str.encode("utf-8")
-            request._body = body_str.encode("utf-8")
-        except:
-            pass
-    return await call_next(request)
 
 @app.post("/wbs")
 async def generate_wbs(input: ScopeInput):
