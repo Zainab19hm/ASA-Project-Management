@@ -8,6 +8,7 @@ export const mockProject = {
   risksCount: 5,
   duration: "28 days",
   confidence: 93,
+
   wbs: [
     {
       id: "1",
@@ -53,6 +54,7 @@ export const mockProject = {
       ],
     },
   ],
+
   ganttTasks: [
     {
       id: "1",
@@ -109,6 +111,7 @@ export const mockProject = {
       dependencies: "5",
     },
   ],
+
   risks: [
     {
       id: 1,
@@ -156,6 +159,7 @@ export const mockProject = {
       mitigation: "Keep docs synced with the working UI every sprint.",
     },
   ],
+
   qaMessages: [
     {
       id: "m1",

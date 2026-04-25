@@ -11,3 +11,12 @@ body,
 body {
   @apply bg-slate-950 text-slate-100 antialiased;
 }
+
+.gantt-task-react {
+  font-size: 14px;
+}
+
+.gantt-task-react .bar-label,
+.gantt-task-react .bar-label span {
+  font-size: 14px !important;
+}

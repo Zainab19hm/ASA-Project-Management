@@ -1,31 +1,20 @@
-import { Routes, Route, Navigate } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 
-// className="min-h-screen bg-slate-950 text-white"
 export default function App() {
+  const [dark, setDark] = useState(true);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", dark);
+  }, [dark]);
+
   return (
-    <div>
-      <Navbar />
+    <div className={dark ? "dark" : ""}>
       <Routes>
-        <Route
-          path="/"
-          element={<Home />}
-        />
-        <Route
-          path="/dashboard"
-          element={<Dashboard />}
-        />
-        <Route
-          path="*"
-          element={
-            <Navigate
-              to="/"
-              replace
-            />
-          }
-        />
+        <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard dark={dark} setDark={setDark} />} />
       </Routes>
     </div>
   );

@@ -1,124 +1,83 @@
 {
-  "project_title": "Student Attendance Tracker",
+  "project_title": "\u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u0645\u062a\u062c\u0631 \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a",
   "phases": [
     {
       "phase_id": 1,
-      "phase_name": "Requirements Gathering",
+      "phase_name": "\u0627\u0644\u062a\u062e\u0637\u064a\u0637 \u0648\u0627\u0644\u062a\u0635\u0645\u064a\u0645",
       "tasks": [
         {
           "task_id": "1.1",
-          "task_name": "Define Project Scope",
-          "description": "Gather requirements from stakeholders and define project scope",
+          "task_name": "\u062a\u062d\u0644\u064a\u0644 \u0645\u062a\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0645\u0634\u0631\u0648\u0639",
+          "description": "\u062a\u062d\u0644\u064a\u0644 \u0627\u0644\u0627\u062d\u062a\u064a\u0627\u062c\u0627\u062a \u0648\u0627\u0644\u0645\u062a\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629 \u0644\u0644\u0645\u0634\u0631\u0648\u0639",
           "effort_days": 5,
-          "role": "Project Manager"
+          "role": "\u0645\u062f\u064a\u0631 \u0627\u0644\u0645\u0634\u0631\u0648\u0639"
         },
         {
           "task_id": "1.2",
-          "task_name": "Identify User Roles",
-          "description": "Define teacher, admin, and student roles and their respective permissions",
+          "task_name": "\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0648\u0627\u062c\u0647\u0629 \u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629",
+          "description": "\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0634\u0643\u0644 \u0627\u0644\u0639\u0627\u0645 \u0644\u0644\u0645\u062a\u062c\u0631 \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a",
           "effort_days": 3,
-          "role": "Business Analyst"
+          "role": "\u0645\u0635\u0645\u0645 \u0648\u064a\u0628"
         }
       ]
     },
     {
       "phase_id": 2,
-      "phase_name": "Design",
+      "phase_name": "\u0628\u0646\u0627\u0621 \u0627\u0644\u0645\u0646\u0635\u0629",
       "tasks": [
         {
           "task_id": "2.1",
-          "task_name": "Create Wireframes",
-          "description": "Design the user interface for login, dashboard, and reporting features",
-          "effort_days": 8,
-          "role": "UI/UX Designer"
+          "task_name": "\u062a\u0637\u0648\u064a\u0631 \u0627\u0644\u0648\u0638\u0627\u0626\u0641 \u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629",
+          "description": "\u0628\u0646\u0627\u0621 \u0646\u0638\u0627\u0645 \u0627\u0644\u0639\u0631\u0636 \u0648\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0645\u0646\u062a\u062c\u0627\u062a",
+          "effort_days": 15,
+          "role": "\u0645\u0637\u0648\u0631 \u0648\u064a\u0628"
         },
         {
           "task_id": "2.2",
-          "task_name": "Develop Prototype",
-          "description": "Create a clickable prototype to test the app's functionality",
-          "effort_days": 10,
-          "role": "UI/UX Designer"
+          "task_name": "\u0628\u0646\u0627\u0621 \u0644\u0648\u062d\u0629 \u0627\u0644\u062a\u062d\u0643\u0645",
+          "description": "\u062a\u0637\u0648\u064a\u0631 \u0644\u0648\u062d\u0629 \u062a\u062d\u0643\u0645 \u0644\u0644\u0645\u0633\u0624\u0648\u0644",
+          "effort_days": 8,
+          "role": "\u0645\u0637\u0648\u0631 \u0648\u064a\u0628"
         }
       ]
     },
     {
       "phase_id": 3,
-      "phase_name": "Development",
+      "phase_name": "\u0627\u0644\u0627\u062e\u062a\u0628\u0627\u0631 \u0648\u0627\u0644\u062a\u0637\u0648\u064a\u0631",
       "tasks": [
         {
           "task_id": "3.1",
-          "task_name": "Develop Login Feature",
-          "description": "Implement login functionality for teachers, admins, and students",
-          "effort_days": 12,
-          "role": "Mobile App Developer"
+          "task_name": "\u0627\u062e\u062a\u0628\u0627\u0631 \u0627\u0644\u0648\u0638\u0627\u0626\u0641",
+          "description": "\u0627\u062e\u062a\u0628\u0627\u0631 \u062c\u0645\u064a\u0639 \u0627\u0644\u0648\u0638\u0627\u0626\u0641 \u0644\u062a\u062d\u0642\u0642 \u0627\u0644\u0647\u062f\u0641",
+          "effort_days": 5,
+          "role": "\u0645\u062a\u062e\u0635\u0635 \u0627\u062e\u062a\u0628\u0627\u0631"
         },
         {
           "task_id": "3.2",
-          "task_name": "Develop Dashboard Feature",
-          "description": "Implement dashboard functionality to display attendance records",
-          "effort_days": 15,
-          "role": "Mobile App Developer"
-        },
-        {
-          "task_id": "3.3",
-          "task_name": "Develop Reporting Feature",
-          "description": "Implement reporting functionality to export attendance records as PDF",
-          "effort_days": 10,
-          "role": "Mobile App Developer"
-        },
-        {
-          "task_id": "3.4",
-          "task_name": "Implement Notification System",
-          "description": "Implement a notification system to send alerts to teachers, admins, and students",
-          "effort_days": 8,
-          "role": "Mobile App Developer"
+          "task_name": "\u062a\u0637\u0648\u064a\u0631 \u0627\u0644\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0645\u062a\u062c\u0627\u0648\u0628",
+          "description": "\u0636\u0645\u0627\u0646 \u0639\u0645\u0644 \u0627\u0644\u0645\u0648\u0642\u0639 \u0639\u0644\u0649 \u0627\u0644\u0647\u0627\u062a\u0641 \u0648\u0627\u0644\u062d\u0627\u0633\u0648\u0628",
+          "effort_days": 4,
+          "role": "\u0645\u0635\u0645\u0645 \u0648\u064a\u0628"
         }
       ]
     },
     {
       "phase_id": 4,
-      "phase_name": "Testing",
+      "phase_name": "\u0627\u0644\u0646\u0634\u0631 \u0648\u0627\u0644\u0635\u064a\u0627\u0646\u0629",
       "tasks": [
         {
           "task_id": "4.1",
-          "task_name": "Unit Testing",
-          "description": "Perform unit testing for individual components",
-          "effort_days": 10,
-          "role": "QA Engineer"
+          "task_name": "\u0646\u0634\u0631 \u0627\u0644\u0645\u0648\u0642\u0639",
+          "description": "\u0646\u0634\u0631 \u0627\u0644\u0645\u0648\u0642\u0639 \u0639\u0644\u0649 \u0627\u0644\u062e\u0627\u062f\u0645",
+          "effort_days": 2,
+          "role": "\u0645\u062f\u064a\u0631 \u0627\u0644\u0646\u0638\u0627\u0645"
         },
         {
           "task_id": "4.2",
-          "task_name": "Integration Testing",
-          "description": "Perform integration testing to ensure seamless functionality",
-          "effort_days": 12,
-          "role": "QA Engineer"
-        },
-        {
-          "task_id": "4.3",
-          "task_name": "UAT Testing",
-          "description": "Perform user acceptance testing to ensure the app meets requirements",
-          "effort_days": 10,
-          "role": "QA Engineer"
-        }
-      ]
-    },
-    {
-      "phase_id": 5,
-      "phase_name": "Deployment",
-      "tasks": [
-        {
-          "task_id": "5.1",
-          "task_name": "Prepare for Release",
-          "description": "Prepare the app for release on app stores",
-          "effort_days": 5,
-          "role": "DevOps Engineer"
-        },
-        {
-          "task_id": "5.2",
-          "task_name": "Deploy to Production",
-          "description": "Deploy the app to production environment",
+          "task_name": "\u0635\u064a\u0627\u0646\u0629 \u0627\u0644\u0645\u0648\u0642\u0639",
+          "description": "\u0636\u0645\u0627\u0646 \u0627\u0633\u062a\u0645\u0631\u0627\u0631\u064a\u0629 \u0648\u0633\u0631\u0639\u0629 \u0627\u0644\u0645\u0648\u0642\u0639",
           "effort_days": 3,
-          "role": "DevOps Engineer"
+          "role": "\u0645\u062f\u064a\u0631 \u0627\u0644\u0646\u0638\u0627\u0645"
         }
       ]
     }

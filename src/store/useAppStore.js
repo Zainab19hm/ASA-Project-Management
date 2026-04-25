@@ -1,14 +1,18 @@
 import { create } from "zustand";
-import { mockProject } from "../data/mockProject";
 
 export const useAppStore = create((set) => ({
   scope: "",
   activeTab: "wbs",
-  isLoading: false,
-  project: mockProject,
 
-  setScope: (scope) => set({ scope }),
-  setActiveTab: (activeTab) => set({ activeTab }),
-  setLoading: (isLoading) => set({ isLoading }),
-  setProject: (project) => set({ project }),
+  project: {
+    title: "ASA Project",
+    status: "In Progress",
+    tasks: 24,
+    completion: 78,
+    risks: 5,
+    duration: "12 Weeks",
+  },
+
+  setScope: (value) => set({ scope: value }),
+  setActiveTab: (tab) => set({ activeTab: tab }),
 }));

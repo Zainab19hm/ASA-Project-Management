@@ -1,0 +1,1 @@
+// This file is deprecated. Vite uses main.jsx instead.
